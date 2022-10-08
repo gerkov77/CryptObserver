@@ -28,7 +28,9 @@ struct CryptoCurrencyCell: View {
 
             Spacer()
 
-            CoinCellDetailComponent(price: price, changePercentage: changePercentage, priceDropped: priceDropped)
+            CoinCellDetailComponent(price: price,
+                                    changePercentage: changePercentage,
+                                    priceDropped: priceDropped)
                 .padding(.vertical, 4)
 
             Divider()
