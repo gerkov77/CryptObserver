@@ -14,7 +14,7 @@ class AssetsListViewModel: ObservableObject {
     @Published var errorTitle: String = ""
     @Published var errorBody: String = ""
     @Published var isShowingError: Bool = false
-    @Published var isShowingConectionError: Bool = false
+    @Published var isShowingConnectionError: Bool = false
     @Published var searchText: String = ""
 
     var bag = Set<AnyCancellable>()
@@ -44,13 +44,14 @@ class AssetsListViewModel: ObservableObject {
 
             } catch let error {
                 await MainActor.run {
-                    errorTitle = "Error"
+                    errorTitle = "Connection Error"
                     print(error.localizedDescription)
                     errorBody = error.localizedDescription
-                    isShowingConectionError = true
+                    isShowingConnectionError = true
                 }
             }
         }
+        
         service.$assets
             .receive(on: RunLoop.main)
             .sink { [weak self] assets in

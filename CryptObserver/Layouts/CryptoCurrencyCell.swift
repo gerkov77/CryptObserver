@@ -22,13 +22,13 @@ struct CryptoCurrencyCell: View {
 
     var body: some View {
         HStack {
-            CoinCellProfileView(name: name,
+            CoinCellProfileComponent(name: name,
                                 symbol: symbol,
                                 image: image)
 
             Spacer()
 
-            CoinCellDetailView(price: price, changePercentage: changePercentage, priceDropped: priceDropped)
+            CoinCellDetailComponent(price: price, changePercentage: changePercentage, priceDropped: priceDropped)
                 .padding(.vertical, 4)
 
             Divider()
@@ -52,55 +52,5 @@ struct CryptoCurrencyCell_Previews: PreviewProvider {
                            changePercentage: "-0.23598",
                            priceDropped: false,
                            isExpanded: .constant(false))
-    }
-}
-
-struct CoinCellProfileView: View {
-
-    let name: String
-    let symbol: String
-    let image: String
-
-    var body: some View {
-        AsyncImage(url: URL(string: image)) { asyncImage in
-            asyncImage.resizable()
-        } placeholder: {
-            ProgressView()
-        }
-        .frame(width: 50, height: 50)
-        .padding(.leading)
-        VStack (alignment: .leading){
-            Text(name)
-            Text(symbol)
-                .foregroundColor(Color(uiColor: .systemGray))
-        }
-    }
-}
-
-struct CoinCellDetailView: View {
-
-    let price: String
-    let changePercentage: String
-    let priceDropped: Bool
-
-    var body: some View {
-        VStack {
-
-            Text("$\(price)")
-
-            HStack {
-                Image(systemName: priceDropped ? "arrowtriangle.down.fill" : "arrowtriangle.up.fill")
-                    .foregroundColor(priceDropped ? .red : .green)
-
-                Text("\(changePercentage)%")
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 4)
-                    .background(priceDropped ? .red : .green)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-
-            }
-        }
-        .padding(.trailing, 4)
     }
 }

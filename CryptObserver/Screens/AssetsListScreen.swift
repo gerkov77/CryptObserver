@@ -45,8 +45,8 @@ struct AssetsListScreen: View {
             .onAppear {
                 viewModel.fetchAssets()
             }
-            .fullScreenCover(isPresented: $viewModel.isShowingConectionError) {
-                ConectionErrorScreen()
+            .fullScreenCover(isPresented: $viewModel.isShowingConnectionError) {
+                ConectionErrorScreen(message: viewModel.errorBody)
                     .environmentObject(viewModel)
             }
             .searchable(text: $viewModel.searchText)

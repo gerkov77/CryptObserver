@@ -24,6 +24,9 @@
 		4DDCCE6A28F18A1900D490C0 /* Edpointtests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE6928F18A1900D490C0 /* Edpointtests.swift */; };
 		4DDCCE6C28F18CD900D490C0 /* AssetsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE6B28F18CD900D490C0 /* AssetsData.swift */; };
 		4DDCCE6E28F1956200D490C0 /* AssetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE6D28F1956200D490C0 /* AssetViewModel.swift */; };
+		4DDCCE7228F1D43900D490C0 /* Task+retrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE7128F1D43800D490C0 /* Task+retrying.swift */; };
+		4DDCCE7628F1D50400D490C0 /* CoinCellProfileComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE7528F1D50400D490C0 /* CoinCellProfileComponent.swift */; };
+		4DDCCE7828F1D55200D490C0 /* CoinCellDetailComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE7728F1D55200D490C0 /* CoinCellDetailComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		4DDCCE6928F18A1900D490C0 /* Edpointtests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edpointtests.swift; sourceTree = "<group>"; };
 		4DDCCE6B28F18CD900D490C0 /* AssetsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsData.swift; sourceTree = "<group>"; };
 		4DDCCE6D28F1956200D490C0 /* AssetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewModel.swift; sourceTree = "<group>"; };
+		4DDCCE7128F1D43800D490C0 /* Task+retrying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+retrying.swift"; sourceTree = "<group>"; };
+		4DDCCE7528F1D50400D490C0 /* CoinCellProfileComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellProfileComponent.swift; sourceTree = "<group>"; };
+		4DDCCE7728F1D55200D490C0 /* CoinCellDetailComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellDetailComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 			children = (
 				4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */,
 				4D42F3F528F166EA007B6B5E /* ContentView.swift */,
+				4DDCCE7328F1D47600D490C0 /* Extensions */,
+				4DDCCE7428F1D4A400D490C0 /* Components */,
 				4DDCCE7028F1B1EC00D490C0 /* Layouts */,
 				4DDCCE6F28F1B1C000D490C0 /* Screens */,
 				4D42F40F28F17CEF007B6B5E /* API */,
@@ -187,6 +195,23 @@
 				4D42F40328F168A4007B6B5E /* EmptyStateView.swift */,
 			);
 			path = Layouts;
+			sourceTree = "<group>";
+		};
+		4DDCCE7328F1D47600D490C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4DDCCE7128F1D43800D490C0 /* Task+retrying.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4DDCCE7428F1D4A400D490C0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4DDCCE7528F1D50400D490C0 /* CoinCellProfileComponent.swift */,
+				4DDCCE7728F1D55200D490C0 /* CoinCellDetailComponent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,10 +321,13 @@
 				4D42F40A28F17B7E007B6B5E /* Asset.swift in Sources */,
 				4D42F41128F17D11007B6B5E /* EndPoint.swift in Sources */,
 				4D42F41728F1808E007B6B5E /* AssetListService.swift in Sources */,
+				4DDCCE7628F1D50400D490C0 /* CoinCellProfileComponent.swift in Sources */,
+				4DDCCE7228F1D43900D490C0 /* Task+retrying.swift in Sources */,
 				4D42F40828F16FF0007B6B5E /* CryptoCurrencyCell.swift in Sources */,
 				4D42F41928F18271007B6B5E /* AssetsListViewModel.swift in Sources */,
 				4D42F3F628F166EA007B6B5E /* ContentView.swift in Sources */,
 				4DDCCE6C28F18CD900D490C0 /* AssetsData.swift in Sources */,
+				4DDCCE7828F1D55200D490C0 /* CoinCellDetailComponent.swift in Sources */,
 				4D42F40228F167DB007B6B5E /* AssetsListScreen.swift in Sources */,
 				4D42F40428F168A4007B6B5E /* EmptyStateView.swift in Sources */,
 				4D42F3F428F166EA007B6B5E /* CryptObserverApp.swift in Sources */,

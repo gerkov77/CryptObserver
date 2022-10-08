@@ -11,6 +11,7 @@ struct ConectionErrorScreen: View {
 
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var viewModel: AssetsListViewModel
+    let message: String
 
     var body: some View {
         ZStack {
@@ -23,12 +24,13 @@ struct ConectionErrorScreen: View {
                     .bold()
                     .padding(.bottom)
 
-                Text("Connection Error")
+                Text(viewModel.errorTitle)
                     .foregroundColor(Color.init(UIColor.systemGray))
                     .font(.custom("Arial Rounded MT Bold", size: 30))
                     .bold()
-
-                Text("Message")
+                    .padding()
+                
+                Text(message)
                     .foregroundColor(Color.init(UIColor.systemGray))
                     .padding(.bottom, 50)
 
@@ -57,6 +59,6 @@ struct ConectionErrorScreen: View {
 
 struct ConectionErrorScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ConectionErrorScreen()
+        ConectionErrorScreen(message: "No internet connection, please try again later")
     }
 }
