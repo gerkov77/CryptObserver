@@ -86,13 +86,13 @@ struct CoinCellDetailView: View {
     var body: some View {
         VStack {
 
-            Text(price)
+            Text("$\(price)")
 
             HStack {
                 Image(systemName: priceDropped ? "arrowtriangle.down.fill" : "arrowtriangle.up.fill")
                     .foregroundColor(priceDropped ? .red : .green)
 
-                Text(changePercentage)
+                Text("\(changePercentage)%")
                     .padding(.horizontal, 10)
                     .padding(.vertical, 4)
                     .background(priceDropped ? .red : .green)

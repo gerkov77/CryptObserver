@@ -15,20 +15,14 @@ import Foundation
 }
 
  extension Endpoint {
-    enum Method: String {
-        case GET
-        case POST
-        case PUT
-        case DELETE
-    }
-}
-
- extension Endpoint {
     static func getAssets(
       ) -> Endpoint {
             return Endpoint(
                 path: "/v2/assets",
-                queryItems: [])
+                queryItems: [
+                    URLQueryItem(name: "offset", value: "1"),
+                    URLQueryItem(name: "limit", value: "200")
+                ])
         }
 }
 
@@ -45,13 +39,3 @@ import Foundation
         }
     }
 }
-
- extension Endpoint {
-    var method: Endpoint.Method {
-        switch self {
-        default:
-            return .GET
-        }
-    }
-}
-
