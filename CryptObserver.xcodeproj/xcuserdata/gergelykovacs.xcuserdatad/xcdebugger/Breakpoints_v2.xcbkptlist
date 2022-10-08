@@ -14,10 +14,72 @@
             filePath = "CryptObserver/Services/AssetListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "fetchAssetsList()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "03F30487-DDEF-4224-A0B7-18DE069A2AC1 - 14bceacb3abeea4c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
+                  moduleName = "CryptObserver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "03F30487-DDEF-4224-A0B7-18DE069A2AC1 - 8bd27f7bc19e8963"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
+                  moduleName = "CryptObserver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "03F30487-DDEF-4224-A0B7-18DE069A2AC1 - 848ac3c6aab52642"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
+                  moduleName = "CryptObserver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "03F30487-DDEF-4224-A0B7-18DE069A2AC1 - 4f7fcc7c52a8d841"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
+                  moduleName = "CryptObserver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,73 +92,10 @@
             filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "fetchAssets()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D61AF3FE-9817-4F29-A2EA-BAFE0A0752CF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CryptObserver/Services/AssetListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "fetchAssetsList()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D61AF3FE-9817-4F29-A2EA-BAFE0A0752CF - 14bceacb3abee8e1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
-                  moduleName = "CryptObserver"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  uuid = "D61AF3FE-9817-4F29-A2EA-BAFE0A0752CF - 8bd27f7bc19e8bce"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
-                  moduleName = "CryptObserver"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "D61AF3FE-9817-4F29-A2EA-BAFE0A0752CF - 4f7fcc7c52a8daec"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
-                  moduleName = "CryptObserver"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -182,100 +181,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D12307D5-A572-4F8A-93F7-673A1E5F76B7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "fetchAssets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D12307D5-A572-4F8A-93F7-673A1E5F76B7 - 23e62a8629eaf797"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in CryptObserver.AssetsListViewModel.fetchAssets() -&gt; ()"
-                  moduleName = "CryptObserver"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/ViewModels/AssetsListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "D12307D5-A572-4F8A-93F7-673A1E5F76B7 - d61f6b6d2c5873b1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in CryptObserver.AssetsListViewModel.fetchAssets() -&gt; ()"
-                  moduleName = "CryptObserver"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/ViewModels/AssetsListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  uuid = "D12307D5-A572-4F8A-93F7-673A1E5F76B7 - d3c00ee0a17ccdc2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async -&gt; () in CryptObserver.AssetsListViewModel.fetchAssets() -&gt; ()"
-                  moduleName = "CryptObserver"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/ViewModels/AssetsListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "D12307D5-A572-4F8A-93F7-673A1E5F76B7 - d3c00ee0a17ccdc2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(8) suspend resume partial function for closure #1 @Sendable () async -&gt; () in CryptObserver.AssetsListViewModel.fetchAssets() -&gt; ()"
-                  moduleName = "CryptObserver"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/ViewModels/AssetsListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "236">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CE5BD9E8-0EF7-43E9-AC6E-ED650ED37644"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "fetchAssets()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "89256FD0-412F-4B8C-85CA-B2026B1107F0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -283,8 +188,8 @@
             filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "fetchAssets()"
             landmarkType = "7">
          </BreakpointContent>
@@ -299,8 +204,8 @@
             filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "fetchAssets()"
             landmarkType = "7">
          </BreakpointContent>
@@ -315,8 +220,8 @@
             filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "fetchAssets()"
             landmarkType = "7">
          </BreakpointContent>
@@ -331,8 +236,8 @@
             filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "fetchAssets()"
             landmarkType = "7">
          </BreakpointContent>
@@ -347,8 +252,8 @@
             filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "fetchAssets()"
             landmarkType = "7">
          </BreakpointContent>
@@ -363,8 +268,8 @@
             filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "fetchAssets()"
             landmarkType = "7">
          </BreakpointContent>
@@ -379,13 +284,13 @@
             filePath = "CryptObserver/ViewModels/AssetsListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "fetchAssets()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0CB47719-145B-42D6-AB01-3E4A0107C532 - 7937a93423358a44"
+                  uuid = "0CB47719-145B-42D6-AB01-3E4A0107C532 - 7937a93423358a86"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -395,12 +300,12 @@
                   urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/ViewModels/AssetsListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
                   offsetFromSymbolStart = "64">
                </Location>
                <Location
-                  uuid = "0CB47719-145B-42D6-AB01-3E4A0107C532 - d3c00ee0a17cc855"
+                  uuid = "0CB47719-145B-42D6-AB01-3E4A0107C532 - d3c00ee0a17cc897"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -410,12 +315,12 @@
                   urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/ViewModels/AssetsListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
                   offsetFromSymbolStart = "452">
                </Location>
                <Location
-                  uuid = "0CB47719-145B-42D6-AB01-3E4A0107C532 - d3c00ee0a17cc855"
+                  uuid = "0CB47719-145B-42D6-AB01-3E4A0107C532 - d3c00ee0a17cc897"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -425,9 +330,87 @@
                   urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/ViewModels/AssetsListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
                   offsetFromSymbolStart = "472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8593E88-D8E8-481F-B9A2-7E910F5BAD09"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptObserver/Services/AssetListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "fetchAssetsList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8593E88-D8E8-481F-B9A2-7E910F5BAD09 - 14bceacb3abee89f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
+                  moduleName = "CryptObserver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "E8593E88-D8E8-481F-B9A2-7E910F5BAD09 - 1ef4977e8f7b0f72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; () in CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
+                  moduleName = "CryptObserver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "E8593E88-D8E8-481F-B9A2-7E910F5BAD09 - 7b994e81d2f89716"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
+                  moduleName = "CryptObserver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "E8593E88-D8E8-481F-B9A2-7E910F5BAD09 - 8836ea3e32952b36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CryptObserver.Asset) -&gt; () in closure #1 @Sendable () async throws -&gt; () in CryptObserver.AssetListService.fetchAssetsList() async throws -&gt; ()"
+                  moduleName = "CryptObserver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gergelykovacs/Dev/CryptObserver/CryptObserver/Services/AssetListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "292">
                </Location>
             </Locations>
          </BreakpointContent>

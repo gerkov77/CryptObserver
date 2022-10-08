@@ -103,8 +103,7 @@
 		4D42F3F228F166EA007B6B5E /* CryptObserver */ = {
 			isa = PBXGroup;
 			children = (
-				4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */,
-				4D42F3F528F166EA007B6B5E /* ContentView.swift */,
+				4DDCCE7A28F1D6D900D490C0 /* Bootstrap */,
 				4DDCCE7328F1D47600D490C0 /* Extensions */,
 				4DDCCE7428F1D4A400D490C0 /* Components */,
 				4DDCCE7028F1B1EC00D490C0 /* Layouts */,
@@ -214,6 +213,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		4DDCCE7A28F1D6D900D490C0 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */,
+				4D42F3F528F166EA007B6B5E /* ContentView.swift */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,6 +249,7 @@
 				4DDCCE5C28F189F100D490C0 /* Sources */,
 				4DDCCE5D28F189F100D490C0 /* Frameworks */,
 				4DDCCE5E28F189F100D490C0 /* Resources */,
+				4DDCCE7928F1D62100D490C0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -309,6 +318,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DDCCE7928F1D62100D490C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, 'brew install swiftlint' or download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D42F3EC28F166EA007B6B5E /* Sources */ = {
