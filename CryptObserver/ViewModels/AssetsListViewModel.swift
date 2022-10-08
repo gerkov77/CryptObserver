@@ -14,6 +14,7 @@ class AssetsListViewModel: ObservableObject {
     @Published var errorTitle: String = ""
     @Published var errorBody: String = ""
     @Published var isShowingError: Bool = false
+    @Published var isShowingConectionError: Bool = false
 
     var bag = Set<AnyCancellable>()
 
@@ -45,12 +46,12 @@ class AssetsListViewModel: ObservableObject {
                     errorTitle = "Error"
                     print(error.localizedDescription)
                     errorBody = error.localizedDescription
-                    isShowingError = true
+                    isShowingConectionError = true
                 }
             }
         }
         service.$assets
-            .receive(on: DispatchQueue.main)
+            .receive(on: RunLoop.main)
             .sink { [weak self] assets in
 
                 self?.assets = assets.map { asset in

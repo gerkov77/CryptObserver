@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ConectionErrorScreen: View {
+
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var viewModel: AssetsListViewModel
+
     var body: some View {
         ZStack {
             Color(UIColor.secondarySystemFill)
@@ -30,6 +34,8 @@ struct ConectionErrorScreen: View {
 
                 Button {
                     print(">> retry button pressed")
+                    viewModel.fetchAssets()
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     HStack {
                         Image(systemName: "arrow.clockwise")

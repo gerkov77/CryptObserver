@@ -51,7 +51,7 @@ extension APIManager {
         }
 
         let decoder = JSONDecoder()
-//        decoder.keyDecodingStrategy = .convertFromSnakeCase
+
         let reposResult = try decoder.decode(Array<Item>.self, from: data)
 
         return reposResult

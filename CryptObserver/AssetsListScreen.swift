@@ -46,6 +46,10 @@ struct AssetsListScreen: View {
             .onAppear {
                 viewModel.fetchAssets()
             }
+            .fullScreenCover(isPresented: $viewModel.isShowingConectionError) {
+                ConectionErrorScreen()
+                    .environmentObject(viewModel)
+            }
         }
 
     }
