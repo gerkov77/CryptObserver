@@ -12,7 +12,7 @@ struct AssetViewModel {
     let name: String
     let symbol: String
     let price: String
-    let image: String
+//    let image: String
     let changePercent24Hr: String?
     var imageUrlString: String {
         return "https://assets.coincap.io/assets/icons/\(symbol.lowercased())@2x.png"

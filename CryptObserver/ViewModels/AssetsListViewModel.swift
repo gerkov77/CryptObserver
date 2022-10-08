@@ -60,7 +60,6 @@ class AssetsListViewModel: ObservableObject {
                                           name: asset.name,
                                           symbol: asset.symbol,
                                           price: asset.priceUsd,
-                                          image: "",
                                           changePercent24Hr: asset.changePercent24Hr
                     )
                 }
@@ -93,7 +92,6 @@ class AssetsListViewModel: ObservableObject {
                                          name: asset.name,
                                          symbol: asset.symbol,
                                          price: asset.priceUsd,
-                                         image: "",
                                          changePercent24Hr: asset.changePercent24Hr)
 
                 }
