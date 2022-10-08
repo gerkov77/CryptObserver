@@ -17,6 +17,7 @@ struct CoinCellDetailComponent: View {
         VStack {
 
             Text("$\(price)")
+                .bold()
 
             HStack {
                 Image(systemName: priceChange.imageString)
@@ -27,6 +28,7 @@ struct CoinCellDetailComponent: View {
                     .padding(.vertical, 4)
                     .background(priceChange.color)
                     .foregroundColor(.white)
+                    .bold()
                     .cornerRadius(10)
 
             }

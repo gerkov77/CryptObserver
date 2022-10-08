@@ -31,11 +31,11 @@ struct AssetViewModel {
     }
 
     var priceChange: PriceChange {
-        if let change = Double(changePercent24Hr) {
+        if let change = Double(changePercentString) {
             switch change {
-            case 0:
+            case 0.0:
                 return .neutral
-            case ..<0:
+            case ..<0.0:
                 return .decrease
             default:
                 return .increase
@@ -45,13 +45,17 @@ struct AssetViewModel {
     }
 
     var changePercentString: String {
-            let substring = changePercent24Hr.dropLast(10)
-            return String(substring)
+        if let number = Double(changePercent24Hr) {
+            return String(format: "%.1f", number )
+        }
+        return "0.00"
     }
 
     var priceString: String {
-            let substring = price.dropLast(10)
-            return String(substring)
+        if let number = Double(price) {
+            return String(format: "%.4f", number)
+        }
+        return "0.0000"
     }
 }
 
