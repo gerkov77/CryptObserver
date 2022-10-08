@@ -30,7 +30,7 @@ enum PriceChange {
         case .increase:
             return "arrowtriangle.up.fill"
         case .neutral:
-            return "circle.fill"
+            return ""
         }
     }
 }

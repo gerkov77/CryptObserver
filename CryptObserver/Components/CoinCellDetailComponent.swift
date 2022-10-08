@@ -22,6 +22,7 @@ struct CoinCellDetailComponent: View {
             HStack {
                 Image(systemName: priceChange.imageString)
                     .foregroundColor(priceChange.color)
+                    .font(.footnote)
 
                 Text("\(changePercentage)%")
                     .padding(.horizontal, 10)
@@ -29,7 +30,7 @@ struct CoinCellDetailComponent: View {
                     .background(priceChange.color)
                     .foregroundColor(.white)
                     .bold()
-                    .cornerRadius(10)
+                    .cornerRadius(20)
 
             }
         }
