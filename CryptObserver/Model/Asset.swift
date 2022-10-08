@@ -13,5 +13,5 @@ struct Asset: Codable {
     let symbol: String
     let name: String
     let priceUsd: String
-    let changePercent24Hr: String?
+    let changePercent24Hr: String
 }

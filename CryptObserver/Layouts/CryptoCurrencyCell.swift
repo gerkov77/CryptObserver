@@ -14,7 +14,7 @@ struct CryptoCurrencyCell: View {
     let image: String
     let price: String
     var changePercentage: String
-    let priceDropped: Bool
+    let priceChange: PriceChange
 
     @Binding var isExpanded: Bool
 
@@ -30,7 +30,7 @@ struct CryptoCurrencyCell: View {
 
             CoinCellDetailComponent(price: price,
                                     changePercentage: changePercentage,
-                                    priceDropped: priceDropped)
+                                    priceChange: priceChange)
                 .padding(.vertical, 4)
 
             Divider()
@@ -52,7 +52,7 @@ struct CryptoCurrencyCell_Previews: PreviewProvider {
                            image: "bitcoinsign.circle",
                            price: "1231231.33",
                            changePercentage: "-0.23598",
-                           priceDropped: false,
+                           priceChange: .increase,
                            isExpanded: .constant(false))
     }
 }

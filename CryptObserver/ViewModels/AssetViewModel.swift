@@ -12,38 +12,46 @@ struct AssetViewModel {
     let name: String
     let symbol: String
     let price: String
-    let changePercent24Hr: String?
+    let changePercent24Hr: String
     var imageUrlString: String {
         return "https://assets.coincap.io/assets/icons/\(symbol.lowercased())@2x.png"
     }
 
     var didDropPrice: Bool {
-        if let changed = changePercent24Hr {
-            if let percentage = Double(changed) {
+
+            if let percentage = Double(changePercent24Hr) {
                 if percentage < 0 {
                     return true
                 } else {
                     return false
                 }
             }
-        }
+
     return false
     }
 
-    var changePercentString: String {
-        if let changedString = changePercent24Hr {
-            let substring = changedString.dropLast(10)
-            return String(substring)
+    var priceChange: PriceChange {
+        if let change = Double(changePercent24Hr) {
+            switch change {
+            case 0:
+                return .neutral
+            case ..<0:
+                return .decrease
+            default:
+                return .increase
+            }
         }
-        return ""
+        return .neutral
+    }
+
+    var changePercentString: String {
+            let substring = changePercent24Hr.dropLast(10)
+            return String(substring)
     }
 
     var priceString: String {
-        if let changedString = changePercent24Hr {
-            let substring = changedString.dropLast(10)
+            let substring = price.dropLast(10)
             return String(substring)
-        }
-        return ""
     }
 }
 

@@ -11,8 +11,6 @@ struct AssetsListScreen: View {
 
     @StateObject var viewModel: AssetsListViewModel
 
-
-
     var body: some View {
         NavigationView {
             Group {
@@ -28,8 +26,9 @@ struct AssetsListScreen: View {
                                     symbol: asset.symbol,
                                     image: asset.imageUrlString,
                                     price: asset.priceString,
-                                    changePercentage: asset.changePercentString,
-                                    priceDropped: asset.didDropPrice,
+                                    changePercentage: asset
+                                        .changePercentString,
+                                    priceChange: asset.priceChange,
                                     isExpanded: .constant(false))
                                     .padding(.horizontal, 16)
                                     .padding(.vertical, 4)

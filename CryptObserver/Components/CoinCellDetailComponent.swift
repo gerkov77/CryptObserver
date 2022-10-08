@@ -11,7 +11,7 @@ struct CoinCellDetailComponent: View {
 
     let price: String
     let changePercentage: String
-    let priceDropped: Bool
+    let priceChange: PriceChange
 
     var body: some View {
         VStack {
@@ -19,13 +19,13 @@ struct CoinCellDetailComponent: View {
             Text("$\(price)")
 
             HStack {
-                Image(systemName: priceDropped ? "arrowtriangle.down.fill" : "arrowtriangle.up.fill")
-                    .foregroundColor(priceDropped ? .red : .green)
+                Image(systemName: priceChange.imageString)
+                    .foregroundColor(priceChange.color)
 
                 Text("\(changePercentage)%")
                     .padding(.horizontal, 10)
                     .padding(.vertical, 4)
-                    .background(priceDropped ? .red : .green)
+                    .background(priceChange.color)
                     .foregroundColor(.white)
                     .cornerRadius(10)
 
@@ -37,6 +37,8 @@ struct CoinCellDetailComponent: View {
 
 struct CoinCellDetailComponent_Previews: PreviewProvider {
     static var previews: some View {
-        CoinCellDetailComponent(price: "21341234.2", changePercentage: "3.5354", priceDropped: false)
+        CoinCellDetailComponent(price: "21341234.2",
+                                changePercentage: "3.5354",
+                                priceChange: .increase)
     }
 }

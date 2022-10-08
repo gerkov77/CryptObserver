@@ -27,6 +27,7 @@
 		4DDCCE7228F1D43900D490C0 /* Task+retrying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE7128F1D43800D490C0 /* Task+retrying.swift */; };
 		4DDCCE7628F1D50400D490C0 /* CoinCellProfileComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE7528F1D50400D490C0 /* CoinCellProfileComponent.swift */; };
 		4DDCCE7828F1D55200D490C0 /* CoinCellDetailComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE7728F1D55200D490C0 /* CoinCellDetailComponent.swift */; };
+		4DDCCE7C28F20AD700D490C0 /* PriceChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCCE7B28F20AD700D490C0 /* PriceChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		4DDCCE7128F1D43800D490C0 /* Task+retrying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+retrying.swift"; sourceTree = "<group>"; };
 		4DDCCE7528F1D50400D490C0 /* CoinCellProfileComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellProfileComponent.swift; sourceTree = "<group>"; };
 		4DDCCE7728F1D55200D490C0 /* CoinCellDetailComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCellDetailComponent.swift; sourceTree = "<group>"; };
+		4DDCCE7B28F20AD700D490C0 /* PriceChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceChange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				4D42F40B28F17C80007B6B5E /* Model */,
 				4D42F3F728F166EB007B6B5E /* Assets.xcassets */,
 				4D42F3F928F166EB007B6B5E /* Preview Content */,
+				4DDCCE7B28F20AD700D490C0 /* PriceChange.swift */,
 			);
 			path = CryptObserver;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				4D42F3F628F166EA007B6B5E /* ContentView.swift in Sources */,
 				4DDCCE6C28F18CD900D490C0 /* AssetsData.swift in Sources */,
 				4DDCCE7828F1D55200D490C0 /* CoinCellDetailComponent.swift in Sources */,
+				4DDCCE7C28F20AD700D490C0 /* PriceChange.swift in Sources */,
 				4D42F40228F167DB007B6B5E /* AssetsListScreen.swift in Sources */,
 				4D42F40428F168A4007B6B5E /* EmptyStateView.swift in Sources */,
 				4D42F3F428F166EA007B6B5E /* CryptObserverApp.swift in Sources */,
