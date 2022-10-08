@@ -15,6 +15,7 @@ class AssetsListViewModel: ObservableObject {
     @Published var errorBody: String = ""
     @Published var isShowingError: Bool = false
     @Published var isShowingConectionError: Bool = false
+    @Published var searchText: String = ""
 
     var bag = Set<AnyCancellable>()
 
@@ -64,6 +65,40 @@ class AssetsListViewModel: ObservableObject {
                     )
                 }
             }
+            .store(in: &bag)
+        filterAssets()
+    }
+    private func filterAssets() {
+        let searchTextFilteredAssetsPublisher: AnyPublisher<[Asset], Never> = $searchText
+            .combineLatest(service.$assets)
+            .receive(on: DispatchQueue.main)
+            .map { (text, assets) -> [Asset] in
+                guard !text.isEmpty else { return assets}
+                let lowerText = text.lowercased()
+                let filteredAssets = assets.filter {
+                    return $0.name.lowercased().contains(lowerText) ||
+                    $0.symbol.lowercased().contains(lowerText)
+                }
+                print(">> filtered assets : \(filteredAssets)")
+                return filteredAssets
+            }
+            .eraseToAnyPublisher()
+
+        searchTextFilteredAssetsPublisher
+            .sink { [weak self] assets in
+                guard let self = self else { return }
+               let assetVms = assets.map {
+                    asset in
+                   return AssetViewModel(id: asset.id,
+                                         name: asset.name,
+                                         symbol: asset.symbol,
+                                         price: asset.priceUsd,
+                                         image: "",
+                                         changePercent24Hr: asset.changePercent24Hr)
+
+                }
+                self.assets = assetVms
+        }
             .store(in: &bag)
     }
 }

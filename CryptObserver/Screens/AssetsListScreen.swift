@@ -11,7 +11,7 @@ struct AssetsListScreen: View {
 
     @StateObject var viewModel: AssetsListViewModel
 
-    @State var searchtext: String = ""
+
 
     var body: some View {
         NavigationView {
@@ -36,7 +36,6 @@ struct AssetsListScreen: View {
                                     .shadow(radius: 4)
                             }
                         }
-                        .searchable(text: $searchtext)
                     }
                 }
             }
@@ -50,6 +49,7 @@ struct AssetsListScreen: View {
                 ConectionErrorScreen()
                     .environmentObject(viewModel)
             }
+            .searchable(text: $viewModel.searchText)
         }
 
     }

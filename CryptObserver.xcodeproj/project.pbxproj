@@ -99,10 +99,8 @@
 			children = (
 				4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */,
 				4D42F3F528F166EA007B6B5E /* ContentView.swift */,
-				4D42F40128F167DB007B6B5E /* AssetsListScreen.swift */,
-				4D42F40328F168A4007B6B5E /* EmptyStateView.swift */,
-				4D42F40528F16D2E007B6B5E /* ConectionErrorScreen.swift */,
-				4D42F40728F16FF0007B6B5E /* CryptoCurrencyCell.swift */,
+				4DDCCE7028F1B1EC00D490C0 /* Layouts */,
+				4DDCCE6F28F1B1C000D490C0 /* Screens */,
 				4D42F40F28F17CEF007B6B5E /* API */,
 				4D42F40D28F17CA0007B6B5E /* Services */,
 				4D42F40C28F17C8E007B6B5E /* ViewModels */,
@@ -171,6 +169,24 @@
 				4DDCCE6928F18A1900D490C0 /* Edpointtests.swift */,
 			);
 			path = CryptObserverTests;
+			sourceTree = "<group>";
+		};
+		4DDCCE6F28F1B1C000D490C0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4D42F40128F167DB007B6B5E /* AssetsListScreen.swift */,
+				4D42F40528F16D2E007B6B5E /* ConectionErrorScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4DDCCE7028F1B1EC00D490C0 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				4D42F40728F16FF0007B6B5E /* CryptoCurrencyCell.swift */,
+				4D42F40328F168A4007B6B5E /* EmptyStateView.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
