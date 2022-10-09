@@ -65,9 +65,18 @@ struct ChartView: View {
     var body: some View {
 
         VStack {
-            path.stroke(Color.white, lineWidth: 2.0)
-                .rotationEffect(.degrees(180), anchor: .center)
-                .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+            ZStack {
+                HStack {
+                    ForEach(0..<12) {_ in
+                        Divider()
+                            .overlay(Color(uiColor: .lightGray))
+                        Spacer()
+                    }
+                }
+                path.stroke(Color.white, lineWidth: 2.0)
+                    .rotationEffect(.degrees(180), anchor: .center)
+                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+            }
         }
         .frame(height: 200)
         .onAppear {
