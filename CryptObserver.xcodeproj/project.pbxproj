@@ -11,6 +11,7 @@
 		4D3BDE5228F32D47008029F3 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE5128F32D47008029F3 /* ChartViewModel.swift */; };
 		4D3BDE5428F330C3008029F3 /* ChartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE5328F330C3008029F3 /* ChartService.swift */; };
 		4D3BDE5628F33103008029F3 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE5528F33103008029F3 /* ChartData.swift */; };
+		4D3BDE5828F39258008029F3 /* PriceInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE5728F39258008029F3 /* PriceInterval.swift */; };
 		4D42F3F428F166EA007B6B5E /* CryptObserverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */; };
 		4D42F3F628F166EA007B6B5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42F3F528F166EA007B6B5E /* ContentView.swift */; };
 		4D42F3F828F166EB007B6B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D42F3F728F166EB007B6B5E /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		4D3BDE5128F32D47008029F3 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		4D3BDE5328F330C3008029F3 /* ChartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartService.swift; sourceTree = "<group>"; };
 		4D3BDE5528F33103008029F3 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		4D3BDE5728F39258008029F3 /* PriceInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceInterval.swift; sourceTree = "<group>"; };
 		4D42F3F028F166EA007B6B5E /* CryptObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptObserverApp.swift; sourceTree = "<group>"; };
 		4D42F3F528F166EA007B6B5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				4D42F3F728F166EB007B6B5E /* Assets.xcassets */,
 				4D42F3F928F166EB007B6B5E /* Preview Content */,
 				4DDCCE7B28F20AD700D490C0 /* PriceChange.swift */,
+				4D3BDE5728F39258008029F3 /* PriceInterval.swift */,
 			);
 			path = CryptObserver;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				4DDCCE7828F1D55200D490C0 /* CoinCellDetailComponent.swift in Sources */,
 				4DDCCE7C28F20AD700D490C0 /* PriceChange.swift in Sources */,
 				4D42F40228F167DB007B6B5E /* AssetsListScreen.swift in Sources */,
+				4D3BDE5828F39258008029F3 /* PriceInterval.swift in Sources */,
 				4D3BDE5428F330C3008029F3 /* ChartService.swift in Sources */,
 				4D42F40428F168A4007B6B5E /* EmptyStateView.swift in Sources */,
 				4D42F3F428F166EA007B6B5E /* CryptObserverApp.swift in Sources */,

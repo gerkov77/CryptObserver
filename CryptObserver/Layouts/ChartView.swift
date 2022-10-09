@@ -11,7 +11,8 @@ struct ChartView: View {
 
     @StateObject var viewModel: ChartViewModel = ChartViewModel()
     let currencyId: String
-
+    
+//TODO: Properties to view model
     var prices: [Double] {
         var prcs: [Double] = []
         viewModel.entries.forEach { entry in
