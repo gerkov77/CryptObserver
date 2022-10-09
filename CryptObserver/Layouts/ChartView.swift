@@ -31,6 +31,7 @@ struct ChartView: View {
     }
 
     let chartWidth = UIScreen.main.bounds.width - 100
+    
     private var path: Path {
         var path = Path()
         if prices.isEmpty {
