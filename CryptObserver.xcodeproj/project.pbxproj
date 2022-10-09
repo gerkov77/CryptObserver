@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D3BDE5028F30CD7008029F3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE4F28F30CD7008029F3 /* ChartView.swift */; };
 		4D42F3F428F166EA007B6B5E /* CryptObserverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */; };
 		4D42F3F628F166EA007B6B5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42F3F528F166EA007B6B5E /* ContentView.swift */; };
 		4D42F3F828F166EB007B6B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D42F3F728F166EB007B6B5E /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D3BDE4F28F30CD7008029F3 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		4D42F3F028F166EA007B6B5E /* CryptObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptObserverApp.swift; sourceTree = "<group>"; };
 		4D42F3F528F166EA007B6B5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				4D42F40728F16FF0007B6B5E /* CryptoCurrencyCell.swift */,
+				4D3BDE4F28F30CD7008029F3 /* ChartView.swift */,
 				4D42F40328F168A4007B6B5E /* EmptyStateView.swift */,
 			);
 			path = Layouts;
@@ -357,6 +360,7 @@
 				4DDCCE7228F1D43900D490C0 /* Task+retrying.swift in Sources */,
 				4D42F40828F16FF0007B6B5E /* CryptoCurrencyCell.swift in Sources */,
 				4D42F41928F18271007B6B5E /* AssetsListViewModel.swift in Sources */,
+				4D3BDE5028F30CD7008029F3 /* ChartView.swift in Sources */,
 				4D42F3F628F166EA007B6B5E /* ContentView.swift in Sources */,
 				4DDCCE6C28F18CD900D490C0 /* AssetsData.swift in Sources */,
 				4DDCCE7828F1D55200D490C0 /* CoinCellDetailComponent.swift in Sources */,

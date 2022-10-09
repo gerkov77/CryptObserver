@@ -43,7 +43,11 @@ struct CryptoCurrencyCell: View {
             .background(Color.white)
         .cornerRadius(5)
             if isExpanded {
-                Color.gray.frame(height: 200)
+
+              Color.gray.frame(height: 200)
+                    .overlay {
+                        ChartView()
+                    }
             }
         }
     }
