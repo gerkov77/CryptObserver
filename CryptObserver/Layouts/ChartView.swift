@@ -50,16 +50,13 @@ struct ChartView: View {
 
         var offsetX: Int = Int(chartWidth/CGFloat(prices.count))
         let padding: CGFloat = 20
-        path.move(to: CGPoint(x: CGFloat(offsetX/2), y: firstPoint + padding))
-        for price in prices {
+        path.move(to: CGPoint(x: CGFloat(offsetX), y: firstPoint + padding))
+        for price in prices.suffix(11) {
 
                 let offsetY = (price-minValue)*quotiens
 
                 offsetX += Int(chartWidth/CGFloat(prices.count))
                 path.addLine(to: CGPointMake(CGFloat(offsetX), CGFloat(offsetY + padding)))
-
-
-
 
         }
         return path
