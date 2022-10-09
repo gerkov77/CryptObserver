@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AssetViewModel {
+struct AssetViewModel: Identifiable, Equatable {
     let id: String
     let name: String
     let symbol: String

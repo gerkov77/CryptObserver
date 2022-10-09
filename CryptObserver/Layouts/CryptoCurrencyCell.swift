@@ -15,33 +15,37 @@ struct CryptoCurrencyCell: View {
     let price: String
     var changePercentage: String
     let priceChange: PriceChange
-
-    @Binding var isExpanded: Bool
+    var isExpanded: Bool
 
     
 
     var body: some View {
-        HStack {
-            CoinCellProfileComponent(name: name,
-                                symbol: symbol,
-                                image: image)
+        VStack {
+            HStack {
+                CoinCellProfileComponent(name: name,
+                                    symbol: symbol,
+                                    image: image)
 
-            Spacer()
+                Spacer()
 
-            CoinCellDetailComponent(price: price,
-                                    changePercentage: changePercentage,
-                                    priceChange: priceChange)
-                .padding(.vertical, 4)
+                CoinCellDetailComponent(price: price,
+                                        changePercentage: changePercentage,
+                                        priceChange: priceChange)
+                    .padding(.vertical, 4)
 
-            Divider()
+                Divider()
 
-            Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                .foregroundColor(Color(uiColor: .systemGray))
-                .padding()
-        }
-        .frame(height: 74)
-        .background(Color.white)
+                Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                    .foregroundColor(Color(uiColor: .systemGray))
+                    .padding()
+            }
+            .frame(height: 74)
+            .background(Color.white)
         .cornerRadius(5)
+            if isExpanded {
+                Color.gray.frame(height: 200)
+            }
+        }
     }
 }
 
@@ -53,6 +57,6 @@ struct CryptoCurrencyCell_Previews: PreviewProvider {
                            price: "1231231.33",
                            changePercentage: "-0.23598",
                            priceChange: .increase,
-                           isExpanded: .constant(false))
+                           isExpanded: false)
     }
 }
