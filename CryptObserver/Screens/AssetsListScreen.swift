@@ -26,6 +26,7 @@ struct AssetsListScreen: View {
                                 let asset = viewModel.assets[index]
 
                                 CryptoCurrencyCell(
+                                    id: asset.id,
                                     name: asset.name,
                                     symbol: asset.symbol,
                                     image: asset.imageUrlString,

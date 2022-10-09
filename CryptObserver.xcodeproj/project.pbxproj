@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D3BDE5028F30CD7008029F3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE4F28F30CD7008029F3 /* ChartView.swift */; };
+		4D3BDE5228F32D47008029F3 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE5128F32D47008029F3 /* ChartViewModel.swift */; };
+		4D3BDE5428F330C3008029F3 /* ChartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE5328F330C3008029F3 /* ChartService.swift */; };
+		4D3BDE5628F33103008029F3 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BDE5528F33103008029F3 /* ChartData.swift */; };
 		4D42F3F428F166EA007B6B5E /* CryptObserverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */; };
 		4D42F3F628F166EA007B6B5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42F3F528F166EA007B6B5E /* ContentView.swift */; };
 		4D42F3F828F166EB007B6B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D42F3F728F166EB007B6B5E /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		4D3BDE4F28F30CD7008029F3 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		4D3BDE5128F32D47008029F3 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		4D3BDE5328F330C3008029F3 /* ChartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartService.swift; sourceTree = "<group>"; };
+		4D3BDE5528F33103008029F3 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		4D42F3F028F166EA007B6B5E /* CryptObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D42F3F328F166EA007B6B5E /* CryptObserverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptObserverApp.swift; sourceTree = "<group>"; };
 		4D42F3F528F166EA007B6B5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 			children = (
 				4D42F40928F17B7E007B6B5E /* Asset.swift */,
 				4DDCCE6B28F18CD900D490C0 /* AssetsData.swift */,
+				4D3BDE5528F33103008029F3 /* ChartData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 			children = (
 				4D42F41828F18271007B6B5E /* AssetsListViewModel.swift */,
 				4DDCCE6D28F1956200D490C0 /* AssetViewModel.swift */,
+				4D3BDE5128F32D47008029F3 /* ChartViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4D42F41628F1808E007B6B5E /* AssetListService.swift */,
+				4D3BDE5328F330C3008029F3 /* ChartService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -355,6 +364,7 @@
 				4D42F41528F18041007B6B5E /* APIManager.swift in Sources */,
 				4D42F40A28F17B7E007B6B5E /* Asset.swift in Sources */,
 				4D42F41128F17D11007B6B5E /* EndPoint.swift in Sources */,
+				4D3BDE5228F32D47008029F3 /* ChartViewModel.swift in Sources */,
 				4D42F41728F1808E007B6B5E /* AssetListService.swift in Sources */,
 				4DDCCE7628F1D50400D490C0 /* CoinCellProfileComponent.swift in Sources */,
 				4DDCCE7228F1D43900D490C0 /* Task+retrying.swift in Sources */,
@@ -366,8 +376,10 @@
 				4DDCCE7828F1D55200D490C0 /* CoinCellDetailComponent.swift in Sources */,
 				4DDCCE7C28F20AD700D490C0 /* PriceChange.swift in Sources */,
 				4D42F40228F167DB007B6B5E /* AssetsListScreen.swift in Sources */,
+				4D3BDE5428F330C3008029F3 /* ChartService.swift in Sources */,
 				4D42F40428F168A4007B6B5E /* EmptyStateView.swift in Sources */,
 				4D42F3F428F166EA007B6B5E /* CryptObserverApp.swift in Sources */,
+				4D3BDE5628F33103008029F3 /* ChartData.swift in Sources */,
 				4DDCCE6E28F1956200D490C0 /* AssetViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

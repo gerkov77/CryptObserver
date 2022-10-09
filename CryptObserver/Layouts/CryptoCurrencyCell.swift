@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CryptoCurrencyCell: View {
-
+    let id: String
     let name: String
     let symbol: String
     let image: String
@@ -46,7 +46,7 @@ struct CryptoCurrencyCell: View {
 
               Color.gray.frame(height: 200)
                     .overlay {
-                        ChartView()
+                        ChartView(currencyId: id)
                     }
             }
         }
@@ -55,7 +55,8 @@ struct CryptoCurrencyCell: View {
 
 struct CryptoCurrencyCell_Previews: PreviewProvider {
     static var previews: some View {
-        CryptoCurrencyCell(name: "Bitcoin",
+        CryptoCurrencyCell(id: "bitcoin",
+                           name: "Bitcoin",
                            symbol: "BTC",
                            image: "bitcoinsign.circle",
                            price: "1231231.33",

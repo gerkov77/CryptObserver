@@ -68,6 +68,7 @@ class AssetsListViewModel: ObservableObject {
             .store(in: &bag)
         filterAssets()
     }
+
     private func filterAssets() {
         let searchTextFilteredAssetsPublisher: AnyPublisher<[Asset], Never> = $searchText
             .combineLatest(service.$assets)
