@@ -88,8 +88,7 @@ class AssetsListViewModel: ObservableObject {
         searchTextFilteredAssetsPublisher
             .sink { [weak self] assets in
                 guard let self = self else { return }
-               let assetVms = assets.map {
-                    asset in
+               let assetVms = assets.map { asset in
                    return AssetViewModel(id: asset.id,
                                          name: asset.name,
                                          symbol: asset.symbol,

@@ -23,7 +23,7 @@ class AssetListService: AssetsPublisher,
     private(set) var manager: APIManager = APIManager.shared
 
     func fetchAssetsList() async throws {
-        try await Task.retrying(maxRetryCount: 3,   operation: { [weak self] in
+        try await Task.retrying(maxRetryCount: 3, operation: { [weak self] in
             do {
                 let res =  try await self?.manager
                     .fetchItem(endpoint: .getAssets(), requestedType: AssetsData.self)

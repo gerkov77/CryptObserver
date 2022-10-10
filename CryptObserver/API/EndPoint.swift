@@ -14,14 +14,12 @@ import Foundation
 
  extension Endpoint {
     var url: URL? {
-        get {
             var components = URLComponents()
             components.scheme = "https"
             components.host = "api.coincap.io"
             components.path = path
             components.queryItems = queryItems
             return components.url
-        }
     }
 }
 
