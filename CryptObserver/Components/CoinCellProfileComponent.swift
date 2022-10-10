@@ -21,8 +21,10 @@ struct CoinCellProfileComponent: View {
         }
         .frame(width: 50, height: 50)
         .padding(.leading)
+
         VStack(alignment: .leading) {
             Text(name)
+            
             Text(symbol)
                 .foregroundColor(Color(uiColor: .systemGray))
         }

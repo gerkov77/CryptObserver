@@ -26,6 +26,5 @@ class ChartService: ObservableObject {
         } catch let error as APIManager.ApiError {
             print(">> api error \(error.localizedDescription)")
         }
-
     }
 }
