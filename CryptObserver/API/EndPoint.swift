@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
  struct Endpoint {
     let path: String
     let queryItems: [URLQueryItem]
@@ -39,14 +37,13 @@ extension Endpoint {
        }
 }
 
-
 extension Endpoint {
     static func chartDataFor(currencyId: String, interval: ChartInterval
      ) -> Endpoint {
            return Endpoint(
                path: "/v2/assets/\(currencyId)/history",
                queryItems: [
-                URLQueryItem(name: "interval", value: interval.rawValue),
+                URLQueryItem(name: "interval", value: interval.rawValue)
                ])
        }
 }

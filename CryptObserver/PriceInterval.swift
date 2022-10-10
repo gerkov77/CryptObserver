@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum ChartInterval: String {
     case day = "d1"
     case halfDay = "h12"

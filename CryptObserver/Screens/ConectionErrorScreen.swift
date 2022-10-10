@@ -29,7 +29,7 @@ struct ConectionErrorScreen: View {
                     .font(.custom("Arial Rounded MT Bold", size: 30))
                     .bold()
                     .padding()
-                
+
                 Text(message)
                     .foregroundColor(Color.init(UIColor.systemGray))
                     .padding(.bottom, 50)

@@ -58,4 +58,3 @@ struct AssetViewModel: Identifiable, Equatable {
         return "0.0000"
     }
 }
-

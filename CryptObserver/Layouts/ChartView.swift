@@ -14,7 +14,6 @@ struct ChartView: View {
     let chartWidth = UIScreen.main.bounds.width - 100
 
     var body: some View {
-
         VStack {
             ZStack {
                 HStack {
@@ -71,7 +70,7 @@ extension ChartView {
         for price in viewModel.prices.suffix(11) {
             let offsetY = (price-minValue)*quotiens
             offsetX += Int(chartWidth/CGFloat(viewModel.prices.count))
-            path.addLine(to: CGPointMake(CGFloat(offsetX), CGFloat(offsetY + padding)))
+            path.addLine(to: CGPoint(x: CGFloat(offsetX), y: CGFloat(offsetY + padding)))
         }
         return path
     }

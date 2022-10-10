@@ -51,7 +51,7 @@ class AssetsListViewModel: ObservableObject {
                 }
             }
         }
-        
+
         service.$assets
             .receive(on: RunLoop.main)
             .sink { [weak self] assets in

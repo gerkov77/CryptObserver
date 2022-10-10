@@ -21,7 +21,6 @@ class ChartViewModel: ObservableObject {
         return prcs
     }
 
-
     var labels: [String] {
         var lbls: [String] = []
         entries.forEach { entry in
@@ -31,7 +30,6 @@ class ChartViewModel: ObservableObject {
     }
 
     var bag = Set<AnyCancellable>()
-
 
     func fetchPriceChanges(fo id: String) {
         Task {

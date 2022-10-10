@@ -14,7 +14,7 @@ struct EmptyStateView: View {
             VStack {
                 Image(systemName: "text.magnifyingglass")
                     .resizable()
-                    .frame(width: 120, height:120)
+                    .frame(width: 120, height: 120)
                     .foregroundColor(Color.init(UIColor.systemGray))
                     .bold()
                     .padding(.bottom)

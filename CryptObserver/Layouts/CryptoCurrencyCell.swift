@@ -17,8 +17,6 @@ struct CryptoCurrencyCell: View {
     let priceChange: PriceChange
     var isExpanded: Bool
 
-    
-
     var body: some View {
         VStack {
             HStack {
