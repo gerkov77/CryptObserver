@@ -13,7 +13,25 @@ class ChartViewModel: ObservableObject {
 
     @Published var entries: [ChartDataViewModel] = []
 
+    var prices: [Double] {
+        var prcs: [Double] = []
+        entries.forEach { entry in
+            prcs.append(entry.priceUsdDouble)
+        }
+        return prcs
+    }
+
+
+    var labels: [String] {
+        var lbls: [String] = []
+        entries.forEach { entry in
+            lbls.append(entry.dateString)
+        }
+        return lbls
+    }
+
     var bag = Set<AnyCancellable>()
+
 
     func fetchPriceChanges(fo id: String) {
         Task {
