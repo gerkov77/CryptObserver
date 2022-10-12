@@ -19,9 +19,7 @@ class ChartService: ObservableObject {
                 .fetchItem(
                     endpoint: .chartDataFor(currencyId: id, interval: interval),
                     requestedType: ChartData.self)
-            DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-                self?.chartData.append(contentsOf: res.data)
-            }
+            chartData.append(contentsOf: res.data)
 
         } catch let error as APIManager.ApiError {
             print(">> api error \(error.localizedDescription)")

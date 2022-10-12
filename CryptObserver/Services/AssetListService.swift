@@ -12,6 +12,8 @@ protocol AssetsListServiceProtocol: AssetsPublisher {
     func fetchAssetsList() async throws
 }
 
+
+
 class AssetListService: AssetsPublisher,
                         AssetsListServiceProtocol,
                         ObservableObject {
@@ -28,9 +30,7 @@ class AssetListService: AssetsPublisher,
                 let res =  try await self?.manager
                     .fetchItem(endpoint: .getAssets(), requestedType: AssetsData.self)
                 res?.data.forEach {  asset in
-                    DispatchQueue.global(qos: .utility).async { [weak self] in
                         self?.assets.append(asset)
-                    }
                 }
                  } catch let error as APIManager.ApiError {
                 throw ServiceError.apiError(error)
